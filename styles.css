@@ -2540,7 +2540,7 @@ body.rounded-btns .read-more {
   background-color: rgba(var(--clr-main-rgb), 0.75);
   z-index: 0;
 }
-#software-link-services{
+.link-services{
   margin-left:0.8rem;
 }
 
@@ -2678,9 +2678,173 @@ body.rounded-btns .read-more {
 .service-single .service-content-area .two-cols-img .img-col img {
   min-width: 100%;
 }
-
+.project-video {
+  min-height: 450px;
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding: 8rem 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 991px) {
+  .portfolio-single .main-area .project-video {
+    padding: 6rem 0;
+    min-height: 300px;
+  }
+}
 /*    End .services Section Rules   */
+/*   Start pricing Section  */
+.pricing {
+  overflow: hidden;
+  position: relative;
+}
+.pricing .plan {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(var(--clr-main-rgb), 0.35);
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 2rem 1rem;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out 0s;
+  box-shadow: 1px 1px 10px 0px rgba(var(--clr-dark-blue-rgb), 0.15);
+}
+@media (max-width: 1199px) {
+  .pricing .plan {
+    margin-bottom: 2rem;
+    overflow: hidden;
+  }
+}
+.pricing .plan .plan-head {
+  position: relative;
+  text-align: center;
+}
+.pricing .plan .plan-head::before {
+  content: "";
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 3px;
+  background-color: var(--clr-main);
+}
+.pricing .plan .plan-head .plan-icon {
+  display: block;
+  font-size: 4rem;
+  opacity: 0.75;
+  color: var(--clr-main);
+}
+.pricing .plan .plan-head .plane-name {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 0;
+  margin-bottom: 1.25rem;
+}
+.pricing .plan .plan-head .plan-price {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 1.5rem;
+  padding: 0;
+}
+.pricing .plan .plan-head .plan-price .price {
+  position: relative;
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1;
+}
+.pricing .plan .plan-head .plan-price .currency-symbol {
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: 500;
+  top: 1rem;
+  left: -1rem;
+  line-height: 0;
+  vertical-align: baseline;
+  display: inline-block;
+  color: var(--clr-main);
+}
+.pricing .plan .plan-head .plan-price .per {
+  font-size: 1.1rem;
+  font-style: italic;
+  opacity: 0.75;
+  padding: 0.25rem;
+}
+.pricing .plan .plan-head .plan-desc {
+  font-size: 0.9rem;
+  opacity: 0.75;
+}
+.pricing .plan .plan-list {
+  list-style: none;
+  margin: 0;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+.pricing .plan .plan-list .plan-feat {
+  position: relative;
+  padding: 0.75rem 0;
+  font-size: 1rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pricing .plan .plan-list .plan-feat .feat-icon {
+  color: var(--clr-main);
+  font-size: 1.5rem;
+}
+.pricing .plan .plan-cta .cta-btn {
+  width: 100%;
+}
+.pricing .plan.featured {
+  background-color: var(--clr-main);
+}
+.pricing .plan.featured:before {
+  content: "most poupular";
+  display: inline-block;
+  padding: 0.25rem 5rem;
+  color: var(--clr-main);
+  background-color: var(--clr-white);
+  top: 3rem;
+  right: -4rem;
+  left: auto;
+  position: absolute;
+  font-weight: 800;
+  font-size: 0.85rem;
+  transform: rotate(45deg);
+}
+.pricing .plan.featured .plan-head::before {
+  background-color: var(--clr-white);
+}
+.pricing .plan.featured .plan-head .plan-icon,
+.pricing .plan.featured .plan-head .plane-name,
+.pricing .plan.featured .plan-head .plan-desc {
+  color: var(--clr-white);
+}
+.pricing .plan.featured .plan-head .plan-price .price,
+.pricing .plan.featured .plan-head .plan-price .currency-symbol,
+.pricing .plan.featured .plan-head .plan-price .per {
+  color: var(--clr-white);
+}
+.pricing .plan.featured .plan-list .plan-feat,
+.pricing .plan.featured .plan-list .feat-icon {
+  color: var(--clr-white);
+}
+.pricing .plan.featured .plan-cta .cta-btn {
+  color: var(--clr-white);
+  border-color: var(--clr-white);
+}
+.pricing .plan.featured .plan-cta .cta-btn:hover {
+  color: var(--clr-main);
+  background-color: var(--clr-white);
+}
 
+/*    End pricing Section  */
 /*   Start about Section   */
 .about .content-block:not(:last-child) {
   margin-bottom: 6rem;
