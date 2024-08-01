@@ -3207,11 +3207,7 @@ body.dark-theme .about .stats-counter.stats-cards .stat-box {
   color: var(--clr-main);
   transform: translateX(0.25rem);
 }
-@media (min-width: 992px){
-  #footer-contact {
-    margin-left: 20rem;
-  }
-}
+
 
 .footer-menu {
   list-style: none;
