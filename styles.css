@@ -3430,4 +3430,104 @@ body.dark-theme .about .stats-counter.stats-cards .stat-box {
   margin: 0;
 }
 
+
 /*    End page-footer Section  */
+
+/* ========== Equal Height Cards and Buttons ========== */
+/* Ensure all service cards have equal height */
+.services-boxed .services-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services-boxed .services-row > [class*="col-"] {
+  display: flex;
+}
+
+.services-boxed .service-box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.services-boxed .service-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.services-boxed .service-text {
+  flex: 1;
+}
+
+.services-boxed .service-box .read-more {
+  margin-top: auto;
+  display: inline-block;
+  min-width: 220px;
+  text-align: center;
+  padding: 0.5rem 1rem;
+}
+
+/* Ensure all stat boxes have equal height */
+.stats .stats-inner .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.stats .stat-box {
+  display: flex;
+}
+
+.stats .stat-box-inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+}
+
+/* Ensure info items have equal height */
+.info-items-list .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info-items-list .row > [class*="col-"] {
+  display: flex;
+}
+
+.info-items-list .info-item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-items-list .info-content {
+  flex: 1;
+}
+
+/* Consistent CTA button sizing */
+.cta-link,
+.btn-solid,
+.btn-outline {
+  min-width: 180px;
+  text-align: center;
+}
+
+/* WhatsApp icon spacing */
+.cta-link .fab.fa-whatsapp {
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 991px) {
+  .cta-link,
+  .btn-solid,
+  .btn-outline {
+    min-width: 150px;
+  }
+  
+  .services-boxed .service-box .read-more {
+    min-width: 180px;
+  }
+}
