@@ -2014,7 +2014,7 @@ body.rounded-btns .read-more {
 
 .header-basic .header-logo .logo-img {
   display: block;
-  max-width: 10rem;
+  max-width: clamp(7rem, 15vw, 10rem);
   max-height: calc(90px - 10px);
   transition: all 0.5s ease-in-out 0s;
 }
